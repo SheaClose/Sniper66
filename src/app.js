@@ -5,30 +5,30 @@ angular.module("app", ["ui.router"])
   .state("home", {
       url: "/"
     , templateUrl: "../views/home.html"
-		, controller: "homeCtrl"
+		, controller: "mainCtrl"
   })
   .state("about", {
       url: "/about"
     , templateUrl: "../views/about.html"
-		, controller: "homeCtrl"
+		, controller: "mainCtrl"
   })
   .state("vids", {
       url: "/vids"
     , templateUrl: "../views/vids.html"
-    , controller: "homeCtrl"
+    , controller: "mainCtrl"
   })
   .state("music", {
       url: "/music"
     , templateUrl: "../views/music.html"
-		, controller: "homeCtrl"
+		, controller: "mainCtrl"
   })
   .state("merch", {
       url: "/merch"
     , templateUrl: "../views/merch.html"
-    , controller: "homeCtrl"
+    , controller: "mainCtrl"
   })
 })
-.directive('', function() {
+.directive('myDirective', function() {
 	return {
 template: ``
 	}

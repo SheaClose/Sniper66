@@ -1,0 +1,30 @@
+.App {
+  background-image: url(https://s3.amazonaws.com/sniper66/background-texture-blood.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.App main {
+  padding-top: 106px;
+}
+.background_texture {
+  object-fit: cover;
+  position: fixed;
+  z-index: -1000;
+}
+
+@media screen and (orientation: landscape) {
+  .background_texture {
+    width: 100vw;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .background_texture {
+    height: 100vh;
+  }
+}
+.splash_img {
+  width: 100%;
+}

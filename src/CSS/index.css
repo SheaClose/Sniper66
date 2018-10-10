@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
 .delete_me_filler {
+  box-sizing: border-box;
   height: 40vh;
-  width: 100vw;
+  width: 100%;
   color: red;
   border: 10px solid blue;
 }

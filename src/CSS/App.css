@@ -8,6 +8,7 @@
 }
 
 .offset {
+  width: 100%;
   overflow-y: auto;
   position: fixed;
   height: 86vh;

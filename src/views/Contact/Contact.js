@@ -8,7 +8,7 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div className="delete_me_filler">
+      <div id="Contact" className="delete_me_filler">
         <h1>Contact</h1>
       </div>
     );

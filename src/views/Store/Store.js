@@ -8,7 +8,7 @@ class Store extends Component {
   }
   render() {
     return (
-      <div className="delete_me_filler">
+      <div id="Store" className="delete_me_filler">
         <h1>Store</h1>
       </div>
     );

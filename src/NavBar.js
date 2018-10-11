@@ -12,6 +12,7 @@ class NavBar extends Component {
   };
 
   render() {
+    let { openLinks } = this.state;
     return (
       <div className="nav_container">
         <nav className="nav">
@@ -19,7 +20,7 @@ class NavBar extends Component {
             <div className="center col-1">
               <MenuIcon
                 className="pointer"
-                onClick={e => this.openLinks(!this.state.openLinks)}
+                onClick={e => this.openLinks(!openLinks)}
               />
             </div>
             <div className="col-10 center logo-container">
@@ -97,14 +98,38 @@ class NavBar extends Component {
           </div>
         </nav>
         <hr className="hr" />
-        <div className={this.state.openLinks ? "link_bar active" : "link_bar"}>
+        <div className={openLinks ? "link_bar active" : "link_bar"}>
           <ul>
-            <li className="col-1">Home</li>
-            <li className="col-1">About</li>
-            <li className="col-1">Contact</li>
-            <li className="col-1">Store</li>
-            <li className="col-1">Shows</li>
-            <li className="col-1">Media</li>
+            <li className="col-1">
+              <a onClick={() => this.openLinks(!openLinks)} href="#Home">
+                Home
+              </a>
+            </li>
+            <li className="col-1">
+              <a onClick={() => this.openLinks(!openLinks)} href="#About">
+                About
+              </a>
+            </li>
+            <li className="col-1">
+              <a onClick={() => this.openLinks(!openLinks)} href="#Store">
+                Store
+              </a>
+            </li>
+            <li className="col-1">
+              <a onClick={() => this.openLinks(!openLinks)} href="#Media">
+                Media
+              </a>
+            </li>
+            <li className="col-1">
+              <a onClick={() => this.openLinks(!openLinks)} href="#Shows">
+                Shows
+              </a>
+            </li>
+            <li className="col-1">
+              <a onClick={() => this.openLinks(!openLinks)} href="#Contact">
+                Contact
+              </a>
+            </li>
           </ul>
         </div>
       </div>

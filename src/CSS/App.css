@@ -6,6 +6,7 @@
   background-size: cover;
 }
 .App main {
+  overflow: hidden;
   padding-top: 106px;
 }
 .background_texture {

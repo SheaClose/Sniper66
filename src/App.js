@@ -14,19 +14,12 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <main>
-          <img
-            className="splash_img"
-            src="https://s3.amazonaws.com/sniper66/splash-photo-noXs.png"
-            alt="splash_img"
-          />
-          <Home />
-          <About />
-          <Contact />
-          <Store />
-          <Media />
-          <Shows />
-        </main>
+        <Home />
+        <About /> <hr />
+        <Store /> <hr />
+        <Media /> <hr />
+        <Shows /> <hr />
+        <Contact /> <hr />
       </div>
     );
   }

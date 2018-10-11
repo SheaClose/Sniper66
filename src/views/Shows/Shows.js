@@ -8,7 +8,7 @@ class Shows extends Component {
   }
   render() {
     return (
-      <div className="delete_me_filler">
+      <div id="Shows" className="delete_me_filler">
         <h1>Shows</h1>
       </div>
     );

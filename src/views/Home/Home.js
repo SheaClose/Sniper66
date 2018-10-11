@@ -8,8 +8,14 @@ class Home extends Component {
   }
   render() {
     return (
-      <div className="delete_me_filler">
-        <h1>Home</h1>
+      <div id="Home">
+        <main>
+          <img
+            className="splash_img"
+            src="https://s3.amazonaws.com/sniper66/splash-photo-noXs.png"
+            alt="splash_img"
+          />
+        </main>
       </div>
     );
   }

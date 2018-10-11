@@ -1,4 +1,5 @@
 .nav_container {
+  height: 10vh;
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -29,9 +30,15 @@
   justify-content: space-between;
   align-items: center;
 }
+#hamburger {
+  font-size: 2.5em;
+}
+.sniper-logo-container {
+  height: 65px;
+}
 .sniper-logo {
   object-fit: contain;
-  height: 50px;
+  height: 100%;
 }
 
 .icon-container {
@@ -44,9 +51,11 @@
   cursor: pointer;
 }
 .link_bar {
+  font-size: 2em;
+  /* padding: 20px; */
   position: absolute;
-  height: 200px;
-  width: 100px;
+  /* height: 200px; */
+  /* width: 100px; */
   background-color: rgba(0, 0, 0, 0.266);
   transition: 0.3s;
   transform-origin: top;
@@ -65,6 +74,7 @@
   padding: 0;
 }
 .link_bar ul li {
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,4 +89,22 @@
 li a {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  #hamburger {
+    /* display: none; */
+  }
+  .icon-container {
+    display: none;
+  }
+  .sniper-logo-container {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sniper-logo-container {
+    height: 50px;
+  }
 }

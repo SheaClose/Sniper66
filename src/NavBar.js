@@ -19,6 +19,7 @@ class NavBar extends Component {
           <div className="nav_darken">
             <div className="center col-1">
               <MenuIcon
+                id="hamburger"
                 className="pointer"
                 onClick={e => this.openLinks(!openLinks)}
               />

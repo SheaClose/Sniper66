@@ -1,13 +1,17 @@
 .App {
+  height: 100vh;
   background-image: url(https://s3.amazonaws.com/sniper66/background-texture-blood.jpg);
   min-height: 100vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.App main {
-  overflow: hidden;
-  padding-top: 106px;
+
+.offset {
+  overflow-y: auto;
+  position: fixed;
+  height: 86vh;
+  top: 115px;
 }
 .background_texture {
   object-fit: cover;
@@ -29,4 +33,15 @@
 .splash_img {
   width: 120%;
   transform: translate(-10%);
+}
+
+@media screen and (max-width: 600px) {
+  .offset {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .offset {
+    top: 70px;
+  }
 }

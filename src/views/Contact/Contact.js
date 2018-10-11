@@ -8,8 +8,10 @@ class Contact extends Component {
   }
   render() {
     return (
-      <div id="Contact" className="delete_me_filler">
-        <h1>Contact</h1>
+      <div id="Contact">
+        <form onSubmit={e => e.preventDefault()}>
+          <textarea name="" id="" cols="30" rows="10" />
+        </form>
       </div>
     );
   }

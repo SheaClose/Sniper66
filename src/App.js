@@ -17,7 +17,7 @@ class App extends Component {
         <main>
           <img
             className="splash_img"
-            src="https://s3.amazonaws.com/sniper66/IMGL5197.jpg"
+            src="https://s3.amazonaws.com/sniper66/splash-photo-noXs.png"
             alt="splash_img"
           />
           <Home />

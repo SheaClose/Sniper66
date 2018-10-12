@@ -5,6 +5,7 @@ const express = require("express"),
   app = express(),
   path = require("path");
   sg = require("sendgrid")(process.env.SENDGRID_API_KEY);
+  console.log('NODE_ENV: ', process.env.NODE_ENV);
 
 app.use(express.static(path.join(__dirname + "/../build")));
 app.use(bodyParser.json());
@@ -23,9 +24,9 @@ app.post(
             to: [
               {
                 email:
-                  NODE_ENV === "production"
-                    ? "sniper66band@gmail"
-                    : "sheaclose@gmail.com"
+                  NODE_ENV !== "production"
+                  ? "sheaclose@gmail.com"
+                  : "sniper66band@gmail"
               }
             ],
             subject: `New Contact message frm Sniper66.com`

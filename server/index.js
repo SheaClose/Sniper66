@@ -8,6 +8,10 @@ const express = require("express"),
 app.use(express.static(path.join(__dirname + "/../build")));
 app.use(bodyParser.json());
 
+app.post("/api/contact", (req, res) => {
+  res.status(200).json("great!");
+});
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname + "/../build"));
 });

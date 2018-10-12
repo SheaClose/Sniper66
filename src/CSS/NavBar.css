@@ -40,9 +40,15 @@
   object-fit: contain;
   height: 100%;
 }
-
-.icon-container {
+.top {
+  width: 100%;
+}
+.top .icon-container {
   display: flex;
+  justify-content: space-evenly;
+}
+.bottom .icon-container {
+  display: none;
   justify-content: space-evenly;
 }
 .icon {
@@ -92,14 +98,24 @@ li a {
 }
 
 @media screen and (max-width: 600px) {
-  #hamburger {
-    /* display: none; */
-  }
-  .icon-container {
+  .top .icon-container {
     display: none;
+  }
+  .bottom .icon-container {
+    display: flex;
+  }
+  .bottom .icon-container img {
+    height: 50px;
+    width: 50px;
   }
   .sniper-logo-container {
     height: 80px;
+  }
+  .sm-col-12 {
+    flex: 12;
+  }
+  .sm-hide {
+    display: none;
   }
 }
 

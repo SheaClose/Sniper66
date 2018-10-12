@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./CSS/NavBar.css";
 import MenuIcon from "@material-ui/icons/Menu";
-
+import IconContainer from "./IconContainer";
 class NavBar extends Component {
   state = {
     openLinks: false
@@ -32,67 +32,8 @@ class NavBar extends Component {
                   alt="Sniper Logo"
                 />
               </div>
-              <div className="row">
-                <div className="col-3" />
-                <div className="col-6 icon-container">
-                  <a href="https://www.facebook.com/Sniper66atx/">
-                    <img
-                      src="https://s3.amazonaws.com/sniper66/facebook.png"
-                      alt="facebook logo"
-                      className="icon"
-                    />
-                  </a>
-                  <a href="https://www.instagram.com/sniper66atx/">
-                    <img
-                      src="https://s3.amazonaws.com/sniper66/instagram.png"
-                      alt="instagram logo"
-                      className="icon"
-                    />
-                  </a>
-                  <a href="https://twitter.com/sniper66band">
-                    <img
-                      src="https://s3.amazonaws.com/sniper66/twitter.png"
-                      alt="twitter logo"
-                      className="icon"
-                    />
-                  </a>
-                  <a href="https://sniper66.bandcamp.com/">
-                    <img
-                      src="https://s3.amazonaws.com/sniper66/bandcamp.png"
-                      alt="bandcamp logo"
-                      className="icon"
-                    />
-                  </a>
-                  <a href="https://www.youtube.com/user/sniper66atx">
-                    <img
-                      src="https://s3.amazonaws.com/sniper66/youtube.png"
-                      alt="youtube logo"
-                      className="icon"
-                    />
-                  </a>
-                  <a href="https://itunes.apple.com/us/artist/sniper-66/603573532">
-                    <img
-                      src="https://s3.amazonaws.com/sniper66/itunes.png"
-                      alt="itunes logo"
-                      className="icon"
-                    />
-                  </a>
-                  <a href="https://soundcloud.com/sniper66band">
-                    <img
-                      src="https://s3.amazonaws.com/sniper66/soundcloud.png"
-                      alt="soundcloud logo"
-                      className="icon"
-                    />
-                  </a>
-                  <a href="https://www.bandsintown.com/en/a/2340819-sniper-66">
-                    <img
-                      src="https://s3.amazonaws.com/sniper66/bandsintown.png"
-                      alt="bandsintown logo"
-                      className="icon"
-                    />
-                  </a>
-                </div>
-                <div className="col-3" />
+              <div className="top">
+              <IconContainer />
               </div>
             </div>
             <div className="center col-1" />

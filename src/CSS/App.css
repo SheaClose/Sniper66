@@ -11,7 +11,11 @@
   width: 100%;
   overflow-y: auto;
   position: fixed;
+<<<<<<< HEAD
   height: 88vh;
+=======
+  height: 86vh;
+>>>>>>> ec01fed94a6499ea3052d7f246983d97a5b0a84f
   top: 115px;
 }
 .background_texture {
@@ -39,12 +43,18 @@
 @media screen and (max-width: 600px) {
   .offset {
     top: 100px;
+<<<<<<< HEAD
     height: 90vh;
+=======
+>>>>>>> ec01fed94a6499ea3052d7f246983d97a5b0a84f
   }
 }
 @media screen and (max-width: 400px) {
   .offset {
     top: 70px;
+<<<<<<< HEAD
     height: 91vh;
+=======
+>>>>>>> ec01fed94a6499ea3052d7f246983d97a5b0a84f
   }
 }

@@ -21,7 +21,7 @@ class App extends Component {
           <Store /> <hr />
           <Media /> <hr />
           <Shows /> <hr />
-          <Contact /> <hr />
+          <Contact />
           <div className="bottom">
             <IconContainer />
           </div>

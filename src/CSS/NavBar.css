@@ -109,8 +109,8 @@ li a {
   }
   .bottom .icon-container img {
     margin: 15px 0;
-    height: 50px;
-    width: 50px;
+    height: 10vw;
+    width: 10vw;
   }
   .sniper-logo-container {
     height: 80px;

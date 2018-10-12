@@ -1,0 +1,12 @@
+#Merch {
+  width: 100%;
+}
+.Merch-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Merch-image {
+  height: 65vh;
+}

@@ -11,7 +11,7 @@
   width: 100%;
   overflow-y: auto;
   position: fixed;
-  height: 86vh;
+  height: 88vh;
   top: 115px;
 }
 .background_texture {
@@ -39,10 +39,12 @@
 @media screen and (max-width: 600px) {
   .offset {
     top: 100px;
+    height: 90vh;
   }
 }
 @media screen and (max-width: 400px) {
   .offset {
     top: 70px;
+    height: 91vh;
   }
 }

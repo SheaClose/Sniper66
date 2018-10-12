@@ -33,7 +33,7 @@ class NavBar extends Component {
                 />
               </div>
               <div className="top">
-              <IconContainer />
+                <IconContainer />
               </div>
             </div>
             <div className="center col-1" />
@@ -53,8 +53,8 @@ class NavBar extends Component {
               </a>
             </li>
             <li className="col-1">
-              <a onClick={() => this.openLinks(!openLinks)} href="#Store">
-                Store
+              <a onClick={() => this.openLinks(!openLinks)} href="#Merch">
+                Merch
               </a>
             </li>
             <li className="col-1">

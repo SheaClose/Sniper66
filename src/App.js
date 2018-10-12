@@ -4,7 +4,7 @@ import "./CSS/App.css";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Contact from "./views/Contact/Contact";
-import Store from "./views/Store/Store";
+import Merch from "./views/Merch/Merch";
 import Media from "./views/Media/Media";
 import Shows from "./views/Shows/Shows";
 import IconContainer from "./IconContainer";
@@ -18,7 +18,7 @@ class App extends Component {
         <div className="offset">
           <Home />
           <About /> <hr />
-          <Store /> <hr />
+          <Merch /> <hr />
           <Media /> <hr />
           <Shows /> <hr />
           <Contact />

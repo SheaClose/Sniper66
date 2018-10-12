@@ -14,6 +14,7 @@ app.post(
   "/api/contact",
   ({ body: { contentBody, contactName, contactEmail } }, res) => {
     let { NODE_ENV } = process.env;
+    console.log(' NODE_ENV !== "production": ', NODE_ENV !== "production");
 
     const request = sg.emptyRequest({
       method: "POST",

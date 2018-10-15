@@ -97,23 +97,6 @@ li a {
 }
 
 @media screen and (max-width: 600px) {
-  .top .icon-container {
-    display: none;
-  }
-  .bottom {
-    background: rgba(255, 255, 255, 0.66);
-  }
-  .bottom .icon-container {
-    display: flex;
-  }
-  .bottom .icon-container img {
-    margin: 10px 0;
-    height: 10vw;
-    width: 10vw;
-  }
-  .sniper-logo-container {
-    height: 80px;
-  }
   .sm-col-12 {
     flex: 12;
   }

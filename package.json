@@ -17,7 +17,7 @@
   },
   "proxy": "http://localhost:3003",
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"nodemon server/index.js\"",
+    "start": "concurrently \"react-scripts start\" \"nodemon --inspect server/index.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

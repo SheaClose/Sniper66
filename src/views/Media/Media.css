@@ -25,3 +25,9 @@
 iframe {
   -webkit-overflow-scrolling: touch;
 }
+h1 center {
+  font-family: "cassius", "IM Fell DW Pica", "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 2em;
+}

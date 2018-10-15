@@ -13,7 +13,7 @@ class Media extends Component {
     return (
       <div id="Media">
         <h1>
-          <center>Videos</center>
+          <center>videos</center>
         </h1>
         <div className="media">
           {fightTogetherIsPublished && (
@@ -85,7 +85,7 @@ class Media extends Component {
           />
         </div>
         <h1>
-          <center>Music</center>
+          <center>music</center>
         </h1>
         <div className="media">
           <iframe

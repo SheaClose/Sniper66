@@ -21,7 +21,10 @@ class App extends Component {
           <Shows /> <hr />
           <Contact />
           <center style={{ color: "white" }}>
-            Site created by <a href="https://sheaclose.com">shea close</a>
+            Site created by{" "}
+            <a style={{ textDecoration: "none" }} href="https://sheaclose.com">
+              shea close
+            </a>
           </center>
         </div>
       </div>

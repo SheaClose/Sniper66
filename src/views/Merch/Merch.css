@@ -1,5 +1,6 @@
 #Merch {
   width: 100%;
+  overflow: hidden;
 }
 .Merch-link {
   display: flex;

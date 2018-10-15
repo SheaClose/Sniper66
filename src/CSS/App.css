@@ -42,3 +42,9 @@
     height: calc(100% - 102px);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .App {
+    background-image: url(https://s3.amazonaws.com/sniper66/mobile-background-texture-blood.jpg);
+  }
+}

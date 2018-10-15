@@ -14,7 +14,6 @@ class Shows extends Component {
           <center>Shows</center>
         </h1>
         <a
-          href="/test"
           className="bit-widget-initializer"
           data-artist-name="sniper66"
           data-display-local-dates="false"
@@ -28,9 +27,7 @@ class Shows extends Component {
           data-link-text-color="#FFF"
           data-display-lineup="false"
           data-separator-color=""
-        >
-          test
-        </a>
+        />
       </div>
     );
   }

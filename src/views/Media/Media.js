@@ -13,6 +13,78 @@ class Media extends Component {
     return (
       <div id="Media">
         <h1>
+          <center>Videos</center>
+        </h1>
+        <div className="media">
+          {fightTogetherIsPublished && (
+            <iframe
+              className="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/riGczCN-E_A?rel=0"
+              frameBorder="0"
+              title="iframe"
+              allow="autoplay; encrypted-media"
+            />
+          )}
+          {inHisGraveIsPublished && (
+            <iframe
+              className="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/SOd0W3rKhDY?rel=0"
+              frameBorder="0"
+              title="iframe"
+              allow="autoplay; encrypted-media"
+            />
+          )}
+          <iframe
+            className="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Cobkfw1m-_k?rel=0"
+            frameBorder="0"
+            title="iframe"
+            allow="autoplay; encrypted-media"
+          />
+          <iframe
+            className="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/aW5s-bVste8?rel=0"
+            frameBorder="0"
+            title="iframe"
+            allow="autoplay; encrypted-media"
+          />
+          <iframe
+            className="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/33-b6rGFOnA?rel=0"
+            frameBorder="0"
+            title="iframe"
+            allow="autoplay; encrypted-media"
+          />
+          <iframe
+            className="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/LoIGRsJH3JU?rel=0"
+            frameBorder="0"
+            title="iframe"
+            allow="autoplay; encrypted-media"
+          />
+          <iframe
+            className="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/vJcqxxAGxGI?rel=0"
+            frameBorder="0"
+            title="iframe"
+            allow="autoplay; encrypted-media"
+          />
+        </div>
+        <h1>
           <center>Music</center>
         </h1>
         <div className="media">
@@ -58,85 +130,6 @@ class Media extends Component {
               Doesn't Matter by Sniper 66
             </a>
           </iframe>
-        </div>
-        <h1>
-          <center>Videos</center>
-        </h1>
-        <div className="media">
-          {fightTogetherIsPublished && (
-            <iframe
-              className="video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/riGczCN-E_A?rel=0"
-              frameBorder="0"
-              title="iframe"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            />
-          )}
-          {inHisGraveIsPublished && (
-            <iframe
-              className="video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/SOd0W3rKhDY?rel=0"
-              frameBorder="0"
-              title="iframe"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            />
-          )}
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Cobkfw1m-_k?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/aW5s-bVste8?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/33-b6rGFOnA?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/LoIGRsJH3JU?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/vJcqxxAGxGI?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          />
         </div>
       </div>
     );

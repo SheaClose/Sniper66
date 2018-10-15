@@ -10,7 +10,6 @@ import Shows from "./views/Shows/Shows";
 import IconContainer from "./IconContainer";
 
 class App extends Component {
-  state = {};
   render() {
     return (
       <div className="App">
@@ -25,6 +24,9 @@ class App extends Component {
           <div className="bottom">
             <IconContainer />
           </div>
+          <center style={{ color: "white" }}>
+            Site created by <a href="https://sheaclose.com">shea close</a>
+          </center>
         </div>
       </div>
     );

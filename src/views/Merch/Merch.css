@@ -9,5 +9,6 @@
 }
 
 .Merch-image {
-  height: 65vh;
+  width: 90vw;
+  object-fit: cover;
 }

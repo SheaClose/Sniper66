@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-//import './IconContainer.css';
 
 class IconContainer extends Component {
   constructor(props) {

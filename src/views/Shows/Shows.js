@@ -21,11 +21,11 @@ class Shows extends Component {
           data-display-past-dates="false"
           data-auto-style="false"
           data-text-color="#000000"
-          data-link-color="rgba(255,0,0,.75)"
+          data-link-color="#85181d"
           data-popup-background-color="#FFFFFF"
           data-background-color="rgba(0,0,0,0)"
           data-display-limit="15"
-          data-link-text-color="#000"
+          data-link-text-color="#FFF"
           data-display-lineup="false"
           data-separator-color=""
         >

@@ -7,7 +7,6 @@ import Contact from "./views/Contact/Contact";
 import Merch from "./views/Merch/Merch";
 import Media from "./views/Media/Media";
 import Shows from "./views/Shows/Shows";
-import IconContainer from "./IconContainer";
 
 class App extends Component {
   render() {

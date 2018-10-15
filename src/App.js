@@ -21,9 +21,6 @@ class App extends Component {
           <Media /> <hr />
           <Shows /> <hr />
           <Contact />
-          <div className="bottom">
-            <IconContainer />
-          </div>
           <center style={{ color: "white" }}>
             Site created by <a href="https://sheaclose.com">shea close</a>
           </center>

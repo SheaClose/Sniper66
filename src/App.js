@@ -1,46 +1,54 @@
 import React, { Component } from "react";
 import NavBar from "./NavBar";
+import Home from "./views/Home/Home";
 import Loadable from "react-loadable";
-
+import Shows from "./views/Shows/Shows";
 import "./CSS/App.css";
 
-const LoadableHome = Loadable({
-  loader: () => import("./views/Home/Home"),
-  loading: () => <div> </div>
-});
-const LoadableAbout = Loadable({
-  loader: () => import("./views/About/About"),
-  loading: () => <div> </div>
-});
-const LoadableContact = Loadable({
-  loader: () => import("./views/Contact/Contact"),
-  loading: () => <div> </div>
-});
-const LoadableMerch = Loadable({
-  loader: () => import("./views/Merch/Merch"),
-  loading: () => <div> </div>
-});
-const LoadableMedia = Loadable({
-  loader: () => import("./views/Media/Media"),
-  loading: () => <div> </div>
-});
-const LoadableShows = Loadable({
-  loader: () => import("./views/Shows/Shows"),
-  loading: () => <div> </div>
-});
-
 class App extends Component {
+  state = {
+    About: () => <div />,
+    Contact: () => <div />,
+    Merch: () => <div />,
+    Media: () => <div />
+  };
+  componentDidMount() {
+    this.setState({
+      About: Loadable({
+        loader: () => import("./views/About/About"),
+        loading: () => <div> </div>
+      }),
+      Contact: Loadable({
+        loader: () => import("./views/Contact/Contact"),
+        loading: () => <div> </div>
+      }),
+      Merch: Loadable({
+        loader: () => import("./views/Merch/Merch"),
+        loading: () => <div> </div>
+      }),
+      Media: Loadable({
+        loader: () => import("./views/Media/Media"),
+        loading: () => <div> </div>
+      })
+    });
+  }
+
   render() {
+    let { About, Merch, Media, Contact } = this.state;
     return (
       <div className="App">
         <NavBar />
         <div className="offset">
-          <LoadableHome />
-          <LoadableAbout /> <hr />
-          <LoadableContact /> <hr />
-          <LoadableMerch /> <hr />
-          <LoadableMedia /> <hr />
-          <LoadableShows />
+          <Home />
+          <About />
+          <hr />
+          <Merch />
+          <hr />
+          <Media />
+          <hr />
+          <Shows />
+          <hr />
+          <Contact />
           <center style={{ color: "white" }}>
             Site created by{" "}
             <a style={{ textDecoration: "none" }} href="https://sheaclose.com">

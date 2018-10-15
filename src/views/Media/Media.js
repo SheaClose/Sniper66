@@ -84,6 +84,7 @@ class Media extends Component {
             allow="autoplay; encrypted-media"
           />
         </div>
+        <hr />
         <h1>
           <center>music</center>
         </h1>

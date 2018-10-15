@@ -1,12 +1,33 @@
 import React, { Component } from "react";
 import NavBar from "./NavBar";
+import Loadable from "react-loadable";
+
 import "./CSS/App.css";
-import Home from "./views/Home/Home";
-import About from "./views/About/About";
-import Contact from "./views/Contact/Contact";
-import Merch from "./views/Merch/Merch";
-import Media from "./views/Media/Media";
-import Shows from "./views/Shows/Shows";
+
+const LoadableHome = Loadable({
+  loader: () => import("./views/Home/Home"),
+  loading: () => <div> </div>
+});
+const LoadableAbout = Loadable({
+  loader: () => import("./views/About/About"),
+  loading: () => <div> </div>
+});
+const LoadableContact = Loadable({
+  loader: () => import("./views/Contact/Contact"),
+  loading: () => <div> </div>
+});
+const LoadableMerch = Loadable({
+  loader: () => import("./views/Merch/Merch"),
+  loading: () => <div> </div>
+});
+const LoadableMedia = Loadable({
+  loader: () => import("./views/Media/Media"),
+  loading: () => <div> </div>
+});
+const LoadableShows = Loadable({
+  loader: () => import("./views/Shows/Shows"),
+  loading: () => <div> </div>
+});
 
 class App extends Component {
   render() {
@@ -14,12 +35,12 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <div className="offset">
-          <Home />
-          <About /> <hr />
-          <Merch /> <hr />
-          <Media /> <hr />
-          <Shows /> <hr />
-          <Contact />
+          <LoadableHome />
+          <LoadableAbout /> <hr />
+          <LoadableContact /> <hr />
+          <LoadableMerch /> <hr />
+          <LoadableMedia /> <hr />
+          <LoadableShows />
           <center style={{ color: "white" }}>
             Site created by{" "}
             <a style={{ textDecoration: "none" }} href="https://sheaclose.com">

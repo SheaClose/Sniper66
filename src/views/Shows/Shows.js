@@ -1,35 +1,35 @@
 import React, { Component } from "react";
-//import './Shows.css';
+import "./Shows.css";
 
 class Shows extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+
   render() {
     return (
       <div id="Shows">
-        <script
-          charSet="utf-8"
-          src="https://widget.bandsintown.com/main.min.js"
-        />
+        <h1>
+          <center>Shows</center>
+        </h1>
         <a
+          href="/test"
           className="bit-widget-initializer"
-          data-artist-name="Sniper 66"
-          data-display-local-dates="true"
-          data-display-past-dates="true"
+          data-artist-name="sniper66"
+          data-display-local-dates="false"
+          data-display-past-dates="false"
           data-auto-style="false"
           data-text-color="#000000"
-          data-link-color="#7F3963"
+          data-link-color="rgba(255,0,0,.75)"
           data-popup-background-color="#FFFFFF"
           data-background-color="rgba(0,0,0,0)"
-          data-display-limit=""
-          data-link-text-color="#FFFFFF"
-          data-display-lineup="true"
-          data-separator-color="rgba(255, 255, 255, 0.5)"
-          href="#Home"
+          data-display-limit="15"
+          data-link-text-color="#000"
+          data-display-lineup="false"
+          data-separator-color=""
         >
-          Shows
+          test
         </a>
       </div>
     );

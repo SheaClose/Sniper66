@@ -9,6 +9,9 @@
 }
 .youtube-player {
   margin-bottom: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
 }
 .youtube-player img {
   width: 100%;
@@ -16,8 +19,8 @@
 }
 .media_iframe {
   border: 0;
-  width: 480px;
-  height: 365px;
+  width: 100%;
+  max-width: 480px;
 }
 .music_iframe {
   border: 0;
@@ -29,7 +32,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .media_iframe {
+  .youtube-player {
     width: 45%;
   }
 }

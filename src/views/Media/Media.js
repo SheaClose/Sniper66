@@ -26,6 +26,7 @@ class Media extends Component {
       var iframe = document.createElement("iframe");
       var embed = "https://www.youtube.com/embed/ID?autoplay=1";
       iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+      iframe.setAttribute("class", "media_iframe");
       iframe.setAttribute("frameborder", "0");
       iframe.setAttribute("allowfullscreen", "1");
       this.parentNode.replaceChild(iframe, this);
@@ -60,7 +61,7 @@ class Media extends Component {
         </h1>
         <div className="media">
           <iframe
-            className="media_iframe"
+            className="music_iframe"
             src="https://bandcamp.com/EmbeddedPlayer/album=977109255/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/"
             seamless
             title="Buried With Your Boots On by Sniper 66
@@ -71,7 +72,7 @@ class Media extends Component {
             </a>
           </iframe>
           <iframe
-            className="media_iframe"
+            className="music_iframe"
             src="https://bandcamp.com/EmbeddedPlayer/album=4014699331/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/"
             seamless
             title="Sniper 66/Potato Pirates by Sniper 66"
@@ -81,7 +82,7 @@ class Media extends Component {
             </a>
           </iframe>
           <iframe
-            className="media_iframe"
+            className="music_iframe"
             src="https://bandcamp.com/EmbeddedPlayer/album=2324232717/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/"
             seamless
             title="Caput Lupinum by Sniper 66"
@@ -92,7 +93,7 @@ class Media extends Component {
           </iframe>
 
           <iframe
-            className="media_iframe"
+            className="music_iframe"
             src="https://bandcamp.com/EmbeddedPlayer/album=2852744363/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/"
             title="Doesn't Matter by Sniper 66"
             seamless

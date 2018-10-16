@@ -31,3 +31,7 @@ h1 center {
     sans-serif;
   font-size: 2em;
 }
+.youtube-player {
+  display: flex;
+  justify-content: center;
+}

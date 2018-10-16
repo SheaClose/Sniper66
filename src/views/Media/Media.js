@@ -2,10 +2,36 @@ import React, { Component } from "react";
 import "./Media.css";
 
 class Media extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
+  componentDidMount() {
+    document.addEventListener("DOMContentLoaded", function() {
+      var div,
+        n,
+        v = document.getElementsByClassName("youtube-player");
+      for (n = 0; n < v.length; n++) {
+        div = document.createElement("div");
+        div.setAttribute("data-id", v[n].dataset.id);
+        div.innerHTML = labnolThumb(v[n].dataset.id);
+        div.onclick = labnolIframe;
+        v[n].appendChild(div);
+      }
+    });
+
+    function labnolThumb(id) {
+      var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+        play = '<div class="play"></div>';
+      return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+      var iframe = document.createElement("iframe");
+      var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+      iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("allowfullscreen", "1");
+      this.parentNode.replaceChild(iframe, this);
+    }
   }
+
   render() {
     let now = new Date().getTime();
     let inHisGraveIsPublished = 1540166400000 < now;
@@ -17,72 +43,16 @@ class Media extends Component {
         </h1>
         <div className="media">
           {fightTogetherIsPublished && (
-            <iframe
-              className="video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/riGczCN-E_A?rel=0"
-              frameBorder="0"
-              title="iframe"
-              allow="autoplay; encrypted-media"
-            />
+            <div class="youtube-player" data-id="riGczCN-E_A" />
           )}
           {inHisGraveIsPublished && (
-            <iframe
-              className="video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/SOd0W3rKhDY?rel=0"
-              frameBorder="0"
-              title="iframe"
-              allow="autoplay; encrypted-media"
-            />
+            <div class="youtube-player" data-id="SOd0W3rKhDY" />
           )}
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Cobkfw1m-_k?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-          />
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/aW5s-bVste8?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-          />
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/33-b6rGFOnA?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-          />
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/LoIGRsJH3JU?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-          />
-          <iframe
-            className="video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/vJcqxxAGxGI?rel=0"
-            frameBorder="0"
-            title="iframe"
-            allow="autoplay; encrypted-media"
-          />
+          <div class="youtube-player" data-id="Cobkfw1m-_k" />
+          <div class="youtube-player" data-id="aW5s-bVste8" />
+          <div class="youtube-player" data-id="33-b6rGFOnA" />
+          <div class="youtube-player" data-id="LoIGRsJH3JU" />
+          <div class="youtube-player" data-id="vJcqxxAGxGI" />
         </div>
         <hr />
         <h1>

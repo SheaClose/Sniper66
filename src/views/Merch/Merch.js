@@ -8,7 +8,9 @@ class Merch extends Component {
         <a className="Merch-link" href="https://sniper66.bandcamp.com/merch">
           <img
             className="Merch-image"
-            src="https://s3.amazonaws.com/sniper66/merch-store.png"
+            src={`https://s3.amazonaws.com/sniper66/${
+              window.innerWidth < 600 ? "mobile-" : ""
+            }merch-store.png`}
             alt="Merch Link"
           />
         </a>

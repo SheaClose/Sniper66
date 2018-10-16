@@ -13,7 +13,7 @@ class Home extends Component {
           <img
             className="splash_img"
             src={`https://s3.amazonaws.com/sniper66/${
-              window.innerWidth > 800 ? "mobile-" : ""
+              window.innerWidth < 600 ? "mobile-" : ""
             }splash-photo-noXs.png`}
             alt="splash_img"
           />

@@ -1,3 +1,6 @@
+#Media {
+  overflow: hidden;
+}
 .media {
   padding: 30px;
   display: flex;
@@ -6,8 +9,10 @@
 }
 .youtube-player {
   margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+}
+.youtube-player img {
+  width: 100%;
+  max-width: 480px;
 }
 .media_iframe {
   border: 0;

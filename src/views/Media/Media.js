@@ -44,16 +44,16 @@ class Media extends Component {
         </h1>
         <div className="media">
           {fightTogetherIsPublished && (
-            <div class="youtube-player" data-id="riGczCN-E_A" />
+            <div className="youtube-player" data-id="riGczCN-E_A" />
           )}
           {inHisGraveIsPublished && (
-            <div class="youtube-player" data-id="SOd0W3rKhDY" />
+            <div className="youtube-player" data-id="SOd0W3rKhDY" />
           )}
-          <div class="youtube-player" data-id="Cobkfw1m-_k" />
-          <div class="youtube-player" data-id="aW5s-bVste8" />
-          <div class="youtube-player" data-id="33-b6rGFOnA" />
-          <div class="youtube-player" data-id="LoIGRsJH3JU" />
-          <div class="youtube-player" data-id="vJcqxxAGxGI" />
+          <div className="youtube-player" data-id="Cobkfw1m-_k" />
+          <div className="youtube-player" data-id="aW5s-bVste8" />
+          <div className="youtube-player" data-id="33-b6rGFOnA" />
+          <div className="youtube-player" data-id="LoIGRsJH3JU" />
+          <div className="youtube-player" data-id="vJcqxxAGxGI" />
         </div>
         <hr />
         <h1>

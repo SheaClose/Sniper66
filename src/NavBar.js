@@ -48,11 +48,6 @@ class NavBar extends Component {
               </a>
             </li>
             <li className="col-1">
-              <a onClick={() => this.openLinks(!openLinks)} href="#About">
-                About
-              </a>
-            </li>
-            <li className="col-1">
               <a onClick={() => this.openLinks(!openLinks)} href="#Merch">
                 Merch
               </a>

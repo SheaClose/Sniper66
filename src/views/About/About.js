@@ -9,7 +9,7 @@ class About extends Component {
   render() {
     return (
       <div id="About">
-        <p className="about_text">
+        <p className="slim about_text">
           Sniper 66 cultivates a brash, hard hitting brand of punk from their
           home soil in Austin, Texas. They play punk, tight and crisp with
           bullet paced drums. While giving a nod to the forefathers, they also

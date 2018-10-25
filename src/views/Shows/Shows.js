@@ -9,7 +9,7 @@ class Shows extends Component {
 
   render() {
     return (
-      <div id="Shows">
+      <div className="slim" id="Shows">
         <h1>
           <center>Shows</center>
         </h1>

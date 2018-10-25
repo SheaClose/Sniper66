@@ -14,9 +14,12 @@
   height: calc(100% - 117px);
   top: 115px;
 }
-.offset > * {
-  width: 95%;
+.slim {
+  width: 90%;
   margin: auto;
+}
+.slim.about_text {
+  margin: 30px;
 }
 .background_texture {
   object-fit: cover;

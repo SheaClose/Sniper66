@@ -60,9 +60,18 @@ class Media extends Component {
           <center>music</center>
         </h1>
         <div className="media">
+          <iframe 
+            className="music_iframe"
+            src="https://bandcamp.com/EmbeddedPlayer/album=378755360/size=medium/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=medium/transparent=true/" 
+            seamless
+          >
+            <a href="http://sniper66.bandcamp.com/album/annihilator">
+              Annihilator by Sniper 66
+            </a>
+          </iframe>
           <iframe
             className="music_iframe"
-            src="https://bandcamp.com/EmbeddedPlayer/album=977109255/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/"
+            src="https://bandcamp.com/EmbeddedPlayer/album=977109255/size=medium/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=medium/transparent=true/"
             seamless
             title="Buried With Your Boots On by Sniper 66
           "
@@ -73,7 +82,7 @@ class Media extends Component {
           </iframe>
           <iframe
             className="music_iframe"
-            src="https://bandcamp.com/EmbeddedPlayer/album=4014699331/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/"
+            src="https://bandcamp.com/EmbeddedPlayer/album=4014699331/size=medium/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=medium/transparent=true/"
             seamless
             title="Sniper 66/Potato Pirates by Sniper 66"
           >
@@ -83,7 +92,7 @@ class Media extends Component {
           </iframe>
           <iframe
             className="music_iframe"
-            src="https://bandcamp.com/EmbeddedPlayer/album=2324232717/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2324232717/size=medium/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=medium/transparent=true/"
             seamless
             title="Caput Lupinum by Sniper 66"
           >
@@ -94,7 +103,7 @@ class Media extends Component {
 
           <iframe
             className="music_iframe"
-            src="https://bandcamp.com/EmbeddedPlayer/album=2852744363/size=large/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=small/transparent=true/"
+            src="https://bandcamp.com/EmbeddedPlayer/album=2852744363/size=medium/bgcol=333333/linkcol=e32c14/tracklist=false/artwork=medium/transparent=true/"
             title="Doesn't Matter by Sniper 66"
             seamless
           >

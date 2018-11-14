@@ -36,6 +36,7 @@ h1 center {
 .music_iframe {
   border: 0;
   width: 700px;
+  margin: 10px 0;
 }
 @media screen and (min-width: 800px) {
   .media {
